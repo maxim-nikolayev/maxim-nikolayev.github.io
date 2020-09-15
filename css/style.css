@@ -38,7 +38,7 @@ nav  li a {
  nav li a:hover {
     color: #949B9B;
     opacity: 90%;
-    
+    font-size: 110%;
   }
 
   h1 {
@@ -65,7 +65,7 @@ nav  li a {
   }
   .profile-foto {
     height: auto;
-    width: 10%;
+    max-width: 300px;
     align-self: center;
     border: solid 2px #F7F5F4;
    
@@ -73,7 +73,7 @@ nav  li a {
   .about > .about-text {
     text-align: center;
     color: white;
-    font-size: 90%;
+    font-size: 100%;
     letter-spacing: 3px;
     line-height: 1.5;
   }
@@ -91,29 +91,19 @@ nav  li a {
   .overview {
     background-color: #F1ECEE;
     color: #775772;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    font-size: medium;
     font-weight: lighter;
   
     
   }
 
- .overview > .tables{
-    display: flex;
-    width: 100%;
+    .education {
     padding: 20px 5%;
-    
-    
-  }
-
-
-   .education {
-    padding: 20px 5%;
-    color: #775772;
-    align-items: center; 
+    color: #775772; 
     letter-spacing: 3px;
     line-height: 1.5;  
   }
@@ -121,7 +111,7 @@ nav  li a {
   
 
   .education td{
-
+    
     text-align: left;
     padding: 10px; 
 
@@ -164,12 +154,12 @@ nav  li a {
 
  .skills {
     height: auto;
-    font-size: 90%;
+    font-size: med;
     font-weight: lighter;
     color: #775772;
      display: grid;
-     justify-content: center;
-     grid-template-columns: repeat(4, 1fr);
+     justify-content: space-evenly;
+     grid-template-columns: repeat(auto-fit, 300px);
      grid-template-rows: auto auto;
      background-color: #F1ECEE;
    }
@@ -181,7 +171,7 @@ nav  li a {
      padding: 10px;
      text-align: center;
      list-style: none;
-     border-right: 1px solid white;
+     
    }
 
    .skills > .framewrks {
@@ -191,7 +181,7 @@ nav  li a {
     padding: 10px;    
     text-align: center;
     list-style: none;
-    border-right: 1px solid white;
+    
    }
 
    .skills > .db {
@@ -201,7 +191,7 @@ nav  li a {
     padding: 10px;    
     text-align: center;
     list-style: none;
-    border-right: 1px solid white;
+    
    }
 
    .skills > .other {
@@ -229,11 +219,12 @@ nav  li a {
   .projects {
     height: auto;
     display: grid;
-    font-size: 90%;
+    font-size: medium;
     font-weight: lighter;
     color: #775772;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, 500px);
     grid-template-rows: auto;
+    justify-content: space-evenly;
     background-color: #F1ECEE;
   }
 
@@ -245,7 +236,7 @@ nav  li a {
     line-height: 2.0;
     margin: 30px ;
     padding: 10px;    
-    text-align: center;
+    text-align: left;
     
   }
 
@@ -255,7 +246,7 @@ nav  li a {
     line-height: 2.0;
     margin: 30px ;
     padding: 10px;    
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -270,45 +261,51 @@ nav  li a {
     
   }
 
-  .contact ul{
-    height: 100px;
-    display: flex;
-    flex: 1;
-    list-style-type: none;
-    padding: 20px 1%;
-    justify-content: space-evenly;
-    background-color: #282737;
+ .contact {
+   display:grid;
+   grid-template-columns: repeat(auto-fit, 400px);
+   justify-content: space-evenly;
+   background: #282737;
+   font-size: x-large;
+   padding: 20px;
+   
+ }
+
+ .contact > .xing {
+  letter-spacing: 3px;
+  line-height: 2.0;
   }
 
-  .contact li {
-    display: inline;
-  }
-  
-  .contact li a {
-   
-    color: #F1ECEE;
-    font-size: 120%;
-    letter-spacing: 3px;
-    line-height: 1.5;   
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .contact li p {
-   
-    color: #F1ECEE;
-    font-size: 120%;
-    letter-spacing: 3px;
-    line-height: 1.5;   
-    
-  }
-  
-  .contact li a:hover {
-    color: #949B9B;
-    opacity: 90%;
-    
+ .contact > .xing a {
+   color: #F1ECEE;
+   text-decoration: none;
+   transition: all 0.3s ease 0s;
+ }
+
+ .xing a:hover{ 
+   opacity: 90%;
+   font-size: 110%;
+   color: #949B9B;
+ }
+
+ .contact > .github {
+  letter-spacing: 3px;
+  line-height: 2.0;
   }
 
+ .contact > .github a {
+  transition: all 0.3s ease 0s;
+   color: #F1ECEE;
+   text-decoration: none;
+ }
+
+ .github a:hover{ 
+  opacity: 90%;
+  font-size: 110%;
+  color: #949B9B;
+}
+ 
+ 
   
 
 
